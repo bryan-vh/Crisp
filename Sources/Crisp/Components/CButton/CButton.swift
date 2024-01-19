@@ -15,7 +15,7 @@ struct CButton: View {
         _ title: String,
         icon: String = "",
         type: CButtonType = .default,
-        style: CButtonStyle = .default,
+        style: CStyle = .primary,
         action: CButtonAction
     ) {
         self.viewModel = CButtonViewModel(
@@ -41,10 +41,10 @@ struct CButton: View {
             }
         }
         .cButtonType(viewModel.type)
-        .cButtonStyle(viewModel.style)
+        .cStyle(viewModel.style, theme: theme)
         .disabled(isLoading)
         .animation(.bouncy, value: isLoading)
-        .font(theme.font)
+        .font(theme.typography.button)
     }
     
     @MainActor
@@ -59,7 +59,7 @@ struct CButton: View {
 
 @available(iOS 17, *)
 #Preview(traits: .sizeThatFitsLayout) {
-    CButton("Hello", icon: "house", type: .default, action: .async({
+    CButton("Hello", icon: "house", style: .outline, action: .async({
         try? await Task.sleep(for: .seconds(5))
     }))
     .padding()

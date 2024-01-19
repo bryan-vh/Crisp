@@ -11,6 +11,6 @@ struct CButtonViewModel {
     let title: String
     let icon: String
     let type: CButtonType
-    let style: CButtonStyle
+    let style: CStyle
     let action: CButtonAction
 }
