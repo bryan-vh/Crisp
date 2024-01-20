@@ -16,6 +16,7 @@ enum CTextSize {
 
 extension View {
     
+    @ViewBuilder
     func text(_ size: CTextSize, theme: Theme) -> some View {
         switch size {
         case .l:

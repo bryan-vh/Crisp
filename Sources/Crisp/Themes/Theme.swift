@@ -32,8 +32,8 @@ extension Theme {
             text: Typography.Text(
                 l: .headline,
                 m: .body,
-                s: .caption,
-                xs: .footnote
+                s: .footnote,
+                xs: .caption
             )
         )
     )

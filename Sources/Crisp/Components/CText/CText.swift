@@ -24,5 +24,5 @@ struct CText: View {
 }
 
 #Preview {
-    CText("Hello World!", size: .m)
+    CText("Hello World!", size: .s)
 }
