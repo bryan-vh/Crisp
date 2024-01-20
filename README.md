@@ -39,9 +39,9 @@ Once you've created your `Theme` instance, you can go ahead and inject this into
 ```swift
 struct ContentView: View {
     var body: some View {
-		VStack()
-			.environment(\.theme, .myTheme)
-	}
+        VStack()
+            .environment(\.theme, .myTheme)
+    }
 }
 ```
 
