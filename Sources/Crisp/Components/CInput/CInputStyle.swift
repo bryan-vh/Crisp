@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum CInputStyle {
+public enum CInputStyle {
     case `default`
     case outline
 }
@@ -39,7 +39,7 @@ struct OutlineInputStyle: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     
     @ViewBuilder
     func cInputStyle(_ inputStyle: CInputStyle, theme: Theme) -> some View {

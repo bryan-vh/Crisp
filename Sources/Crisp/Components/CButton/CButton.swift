@@ -11,7 +11,7 @@ public struct CButton: View {
     @State private var isLoading = false
     private let viewModel: CButtonViewModel
     
-    init(
+    public init(
         _ title: String,
         icon: String = "",
         type: CButtonType = .default,

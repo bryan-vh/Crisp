@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-enum CHeadingSize {
+public enum CHeadingSize {
     case h1
     case h2
     case h3
 }
 
-extension Text {
+public extension Text {
     
     @ViewBuilder
     func heading(_ size: CHeadingSize, theme: Theme) -> some View {

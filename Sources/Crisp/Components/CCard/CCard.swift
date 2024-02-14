@@ -13,7 +13,7 @@ public struct CCard<Header: View, Content: View, Footer: View>: View {
     
     private let viewModel: CCardViewModel<Header, Content, Footer>
     
-    init(
+    public init(
         _ style: CCardStyle,
         content: @escaping () -> Content,
         header: @escaping () -> Header = { EmptyView() },

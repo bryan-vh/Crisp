@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum CButtonType {
+public enum CButtonType {
     case `default`
     case stretched
     case icon
@@ -62,7 +62,7 @@ struct TextButtonType: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     
     @ViewBuilder
     func cButtonType(_ type: CButtonType) -> some View {

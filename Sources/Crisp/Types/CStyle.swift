@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum CStyle {
+public enum CStyle {
     case primary
     case secondary
     case outline

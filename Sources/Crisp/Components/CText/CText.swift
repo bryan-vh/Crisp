@@ -13,7 +13,7 @@ public struct CText: View {
     
     private let viewModel: CTextViewModel
     
-    init(_ text: String, size: CTextSize) {
+    public init(_ text: String, size: CTextSize) {
         self.viewModel = CTextViewModel(text: text, size: size)
     }
     

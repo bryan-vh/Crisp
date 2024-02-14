@@ -13,7 +13,7 @@ public struct CHeading: View {
     
     private let viewModel: CHeadingViewModel
     
-    init(_ text: String, size: CHeadingSize) {
+    public init(_ text: String, size: CHeadingSize) {
         self.viewModel = CHeadingViewModel(text: text, size: size)
     }
     

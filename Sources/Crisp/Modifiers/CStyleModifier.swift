@@ -57,7 +57,7 @@ struct PlainStyle: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     
     @ViewBuilder
     func cStyle(_ style: CStyle, theme: Theme) -> some View {

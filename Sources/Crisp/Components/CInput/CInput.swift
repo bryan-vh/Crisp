@@ -14,7 +14,7 @@ public struct CInput: View {
     
     private let viewModel: CInputViewModel
     
-    init(
+    public init(
         input: Binding<String>,
         content: UITextContentType? = nil,
         type: CInputType,

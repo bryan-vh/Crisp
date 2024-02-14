@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum CCardStyle {
+public enum CCardStyle {
     case `default`
     case outline
 }
@@ -39,7 +39,7 @@ struct OutlineCardStyle: ViewModifier {
     }
 }
 
-extension View {
+public extension View {
     
     @ViewBuilder
     func cCardStyle(_ style: CCardStyle, theme: Theme) -> some View {

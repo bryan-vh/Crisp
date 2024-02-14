@@ -13,7 +13,7 @@ public struct Theme {
     let typography: Typography
 }
 
-extension Theme {
+public extension Theme {
     static let `default` = Theme(
         shape: AnyShape(.rect(cornerRadius: 16)),
         primaryForeground: .primary,

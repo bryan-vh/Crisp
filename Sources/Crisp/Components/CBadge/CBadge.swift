@@ -13,7 +13,7 @@ public struct CBadge: View {
     
     private let viewModel: CBadgeViewModel
     
-    init(_ title: String, icon: String? = nil, style: CStyle = .primary) {
+    public init(_ title: String, icon: String? = nil, style: CStyle = .primary) {
         self.viewModel = CBadgeViewModel(title: title, icon: icon, style: style)
     }
     

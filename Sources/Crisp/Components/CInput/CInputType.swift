@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-enum CInputType {
+public enum CInputType {
     case `default`
     case secure
     case pin(Int)

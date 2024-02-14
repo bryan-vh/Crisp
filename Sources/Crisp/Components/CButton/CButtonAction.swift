@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CButtonAction {
+public enum CButtonAction {
     case `default`(() -> Void)
     case `async`(() async -> Void)
 }

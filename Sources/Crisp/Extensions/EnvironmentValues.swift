@@ -5,14 +5,14 @@
 import Foundation
 import SwiftUI
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
     var theme: Theme {
         get { self[ThemeKey.self] }
         set { self[ThemeKey.self] = newValue }
     }
 }
 
-extension View {
+public extension View {
     func theme(_ value: Theme) -> some View {
         environment(\.theme, value)
     }

@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-enum CTextSize {
+public enum CTextSize {
     case l
     case m
     case s
     case xs
 }
 
-extension View {
+public extension View {
     
     @ViewBuilder
     func text(_ size: CTextSize, theme: Theme) -> some View {
