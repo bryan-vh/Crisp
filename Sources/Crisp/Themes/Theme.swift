@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct Theme {
+public struct Theme {
     let shape: AnyShape
     let primaryForeground: Color
     let secondaryForeground: Color

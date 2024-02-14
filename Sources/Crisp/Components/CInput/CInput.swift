@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CInput: View {
+public struct CInput: View {
     
     @Environment(\.theme) var theme
     @Binding var input: String
@@ -24,7 +24,7 @@ struct CInput: View {
         self.viewModel = CInputViewModel(content: content, style: style, type: type)
     }
     
-    var body: some View {
+    public var body: some View {
         switch viewModel.type {
         case .default:
             TextField("", text: $input)

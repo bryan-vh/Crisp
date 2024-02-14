@@ -4,7 +4,7 @@
 
 import SwiftUI
 
-struct CButton: View {
+public struct CButton: View {
     
     @Environment(\.theme) var theme
     
@@ -27,7 +27,7 @@ struct CButton: View {
         )
     }
     
-    var body: some View {
+    public var body: some View {
         Button {
             switch viewModel.action {
             case .default(let action): action()

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CText: View {
+public struct CText: View {
     
     @Environment(\.theme) var theme
     
@@ -17,7 +17,7 @@ struct CText: View {
         self.viewModel = CTextViewModel(text: text, size: size)
     }
     
-    var body: some View {
+    public var body: some View {
         Text(viewModel.text)
             .text(viewModel.size, theme: theme)
     }

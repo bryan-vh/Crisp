@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CCard<Header: View, Content: View, Footer: View>: View {
+public struct CCard<Header: View, Content: View, Footer: View>: View {
     
     @Environment(\.theme) var theme
     
@@ -22,7 +22,7 @@ struct CCard<Header: View, Content: View, Footer: View>: View {
         self.viewModel = CCardViewModel(header: header, content: content, footer: footer, style: style)
     }
     
-    var body: some View {
+    public var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             viewModel.header
             viewModel.content

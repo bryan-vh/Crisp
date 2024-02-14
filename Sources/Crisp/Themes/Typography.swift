@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Typography {
+public struct Typography {
     let badge: Font
     let input: Font
     let button: Font

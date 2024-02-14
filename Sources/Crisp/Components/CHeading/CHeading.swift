@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CHeading: View {
+public struct CHeading: View {
     
     @Environment(\.theme) var theme
     
@@ -17,7 +17,7 @@ struct CHeading: View {
         self.viewModel = CHeadingViewModel(text: text, size: size)
     }
     
-    var body: some View {
+    public var body: some View {
         Text(viewModel.text)
             .heading(viewModel.size, theme: theme)
     }

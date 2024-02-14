@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CBadge: View {
+public struct CBadge: View {
     
     @Environment(\.theme) var theme
     
@@ -17,7 +17,7 @@ struct CBadge: View {
         self.viewModel = CBadgeViewModel(title: title, icon: icon, style: style)
     }
     
-    var body: some View {
+    public var body: some View {
         if let icon = viewModel.icon {
             Label(viewModel.title, systemImage: icon)
                 .font(theme.typography.badge)
